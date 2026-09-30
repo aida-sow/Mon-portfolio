@@ -3,73 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Aïda SOW">
-    <title>Mon Portfolio</title>
+    <meta name="description" content="Portfolio de Aïda SOW - Développeuse Web">
+    <link rel="stylesheet" href="style.css">
+    <title>SYSTÉME_404 | Aïda SOW</title>
 </head>
 <body>
-    <header>
-        <h1>Mon Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#competence">Mes compétences</a></li>
-                <li><a href="#projet">Mes projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="apropos">
-            <h2>À propos de moi</h2>
-            <p>
-                <img src="images/image_dev.png" alt="Image d'illustration du developpement web" width="700" height="500"> <br>
-                Je suis une développeuse web passionnée par la création de sites web interactifs et fonctionnels. 
-                J'ai une solide expérience en HTML, CSS, JavaScript et d'autres technologies web. 
-                Mon objectif est de créer des expériences utilisateur exceptionnelles et de contribuer à des projets innovants.
-            </p>
-        </section>
-        <section id="competence">
-            <h2>Mes compétences</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Git et GitHub</li>
-            </ul> 
-        </section>
-        <section id="projet">
-            <h2>Mes projets</h2>
-            <article>
-                <h3>Site d'apprêtissage sur l'Afrique</h3>
-                <p>
-                    Un site web educatif sous forme de quiz sur l'Afrique. 
-                    Vous pouvez acceder au code source sur ma page GitHub 
-                    <a href="https://github.com/aida-sow/jang-afrig.git" target="_blank" rel="noopener noreferrer">
-                        https://github.com/aida-sow/jang-afrig.git
-                    </a>.
-                </p>
-            </article>
-            <article>
-                <h3>Site de gestion de tâches</h3>
-                <p>
-                    Un site web de gestion de tâches permettant aux utilisateurs de créer, modifier et supprimer des tâches.
-                    Vous pouvez visiter le site en ligne à l'adresse suivante : 
-                    <a href="https://rush-rho-eight.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        https://rush-rho-eight.vercel.app/
-                    </a>
-                </p>
-            </article>
-        </section>
-        <section id="contact">
-            <h2>Me contacter</h2>
-            <p>
-                Telephone : +221 77 669 27 06 <br>
-                Email : <a href="mailto:aidamandiere@gmail.com" target="_blank" rel="noopener noreferrer">aidamandiere@gmail.com</a>
-            </p>
-        </section>
+    
+    <!--  ÉCRAN DE DÉMARRAGE  -->
+    
+    <div id="boot-screen" class="boot-screen">
+        <div class="boot-content">
+            <div class="system-name">
+                SYSTÉME_404
+            </div>
+            <div class="system-version">
+                v1.0.7
+            </div>
+            <div class="boot-log">
+                <p>> Initialisation du systéme...</p>
+                <p>> Vérification de la mémoire........ <span>OK</span></p>
+                <p>> Vérification du réseau........ <span>OK</span></p>
+                <p>> Vérification de l'utilisateur.......... <span class="error">ERROR</span></p>
+                <p class="warning">> Utilisateur inconnu détecté.</p>
+            </div>
+            <div class="welcome-message">
+                <h1>BIENVENUE, ÉTRANGER.</h1>
+                <p>Tu ne devrais pas être ici...</p>
+            </div>
+            <button id="enter-system" class="system-button">[ ENTRER ]</button>
+        </div>
+    </div>
+
+    <!--  INTERFACE PRINCIPALE  -->
+
+    <div id="system-interface" class="system-interface">
+        <header class="system-header">
+            <div class="header-left">
+                <div class="system-logo">
+                    SYSTÉME_404
+                </div>
+                <div class="system-status">
+                    SATUT: <span>EN LIGNE</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <span id="system-time">00:00:00</span>
+                <span class="user-status">UTILISATEUR: AÏDA</span>
+            </div>
+        </header>
+
+    <!--  CONTENU PRINCIPAL  -->
+        
+    <main class="system-main">
+        <aside class="system-sidebar">
+            <div class="sidebar-title">
+                C:\UTILISATEUR_INCONNU\
+            </div>
+            <nav class="system-navigation">
+                <ul>
+                    <li>
+                        <a href="#apropos">
+                            <span class="file-icon">▰</span>
+                            A_PROPOS.exe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#competence">
+                            <span class="file-icon">▰</span>
+                            COMPÉTENCES.exe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projet">
+                            <span class="file-icon">▰</span>
+                            PROJETS.exe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="file-icon">▰</span>
+                            CONTACTS.exe
+                        </a>
+                    </li>
+                    <li class="restricted-file">
+                        <a href="#do-not-open">
+                            <span class="lock-icon">🔒</span>
+                            DO_NOT_OPEN.exe
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <p>SYSTÉME_404</p>
+                <p>Fichiers détectés: 5</p>
+                <p class="hidden-files">Fichiers cachés: 1</p>
+            </div>
+        </aside>
+
+        <!--  ZONE DE CONTENU  -->
+
+        <div class="system-content">
+            
+            <!--  A PROPOS  -->
+            <section id="apropos" class="system-window about-window">
+                <div class="window-header">
+                    <span>A_PROPOS.exe</span>
+                    <button class="window-close" aria-label="Fermer">×</button>
+                </div>
+                <div class="window-content">
+                    <div class="identity-file">
+                        <div class="identity-image">
+                            <img src="images/image_dev.png" alt="Illustration du développement web">
+                        </div>
+                        <div class="identity-information">
+                            <p><span class="label">Nom: </span>Aïda SOW</p>
+                            <p><span class="label">Statut: </span><span class="online">En ligne</span></p>
+                            <p><span class="label">Occupation: </span>Développeuse Web</p>
+                            <p><span class="label">Adresse: </span>Cité Corossol, SN City, Dakar, Senegal</p>
+                            <p><span class="label">Expériences: </span>En developpement...</p>
+                        </div>
+                    </div>
+                    <div class="system-loading">
+                        <p>> Chargement de la personnalité...</p>
+                        <div class="loading-bar">
+                            <div class="loading-progress" data-progress="100"></div>
+                        </div>
+                    </div>
+                    <div class="about-description">
+                        <p>
+                            Je suis une développeuse web passionnée par la création de sites web interactifs et fonctionnels.
+                            J'aime apprendre, expérimenter et transformer des idées en expériences numériques.
+                            <br>Mon objectif est de créer des expériences utilisateur exceptionnelles et de contribuer à des projets innovants.
+                        </p>
+                    </div>
+                    <div class="system-message warning">
+                        <span>⚠</span>Le profil montre des niveaux de créativité inhabituels.
+                    </div>
+                </div>
+            </section>
+
+            <!--  COMPÉTENCES  -->
+            <section id="competence" class="system-window skills-window">
+                <div class="window-header">
+                    <span>COMPÉTENCES.exe</span>
+                    <button class="window-close" aria-label="Fermer">×</button>
+                </div>
+                <div class="window-content">
+                    <div class="section-introduction">
+                        <p>> Analyse des capacités du système...</p>
+                    </div>
+                    <div class="skills-list">
+                        <!--  HTML5  -->
+                        <div class="skill">
+                            <div class="skill-name">HTML5</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="70"></div>
+                            </div>
+                            <div class="skill-percentage">70%</div>
+                        </div>
+                        <!-- CSS -->
+                        <div class="skill">
+                            <div class="skill-name">CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="65"></div>
+                            </div>
+                            <div class="skill-percentage">65%</div>
+                        </div>
+                        <!-- JavaScript -->
+                        <div class="skill">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="50"></div>
+                            </div>
+                            <div class="skill-percentage">50%</div>
+                        </div>
+                        <!-- Git et GitHub -->
+                        <div class="skill">
+                            <div class="skill-name">Git / GitHub</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="80"></div>
+                            </div>
+                            <div class="skill-percentage">80%</div>
+                        </div>
+                    </div>
+                    <div class="system-message">> Recherche de capacités inconnues...</div>
+                    <div class="system-message warning"><span>⚠</span>.</div>
+                </div>
+            </section>
+
+            <!--  PROJETS  -->
+            <section id="projet" class="system-window projects-window">
+                <div class="window-header">
+                    <span>PROJETS.exe</span>
+                    <span class="file-count">2 projets trouvés</span>
+                </div>
+                <div class="window-content">
+                    <!-- PROJET 1 -->
+                    <article class="project-file">
+                        <div class="project-icon">📁</div>
+                        <div class="project-information">
+                            <h2>Jang Afrig</h2>
+                            <p class="project-status completed">STATUT: ACHEVÉ</p>
+                            <p>Site web éducatif sous forme de quiz sur l'Afrique.</p>
+                            <p class="technologies">HTML / CSS / JavaScript</p>
+                            <a href="https://github.com/aida-sow/jang-afrig.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                                [ VOIR LE CODE SOURCE SUR GITHUB ]
+                            </a>
+                        </div>
+                    </article>
+                    <!-- PROJET 2 -->
+                    <article class="project-file">
+                        <div class="project-icon">📁</div>
+                        <div class="project-information">
+                            <h2>Gestion de tâches</h2>
+                            <p class="project-status encours">STATUT: EN DEVELOPPEMENT</p>
+                            <p>Site Web permettant aux utilisateurs de créer, modifier et supprimer des tâches.</p>
+                            <p class="technologies">HTML / CSS / JavaScript</p>
+                            <a href="https://rush-rho-eight.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                [ VOIR LE SITE ]
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--  CONTACTS  -->
+            <section id="contact" class="system-window contact-window">
+                <div class="window-header">
+                    <span>CONTACTS.exe</span>
+                    <button class="window-close" aria-label="Fermer">×</button>
+                </div>
+                <div class="window-content">
+                    <p>> Établissement de la communication...</p>
+                    <div class="contact-information">
+                        <p>
+                            <span class="contact-label">Téléphone: </span>
+                            <a href="tel:+221776692706">+221 77 669 27 06</a>
+                        </p>
+                        <p>
+                            <span class="contact-label">Email: </span>
+                            <a href="mailto:aidamandiere@gmail.com">aidamandiere@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="contact-status">
+                        <span class="status-dot">.</span>J'attends votre message...
+                    </div>
+                </div>
+            </section>
+
+            <!--  FICHIER INTERDIT  -->
+            <section id="do-not-open" class="system-window restricted-window">
+                <div class="window-header restricted-header">
+                    <span>DO_NOT_OPEN.exe</span>
+                    <button class="window-close" aria-label="Fermer">×</button>
+                </div>
+                <div class="window-content restricted-content">
+                    <div class="warning-symbol">⚠</div>
+                    <h2>ATTENTION</h2>
+                    <p>Ce fichier ne doit pas être ouvert.</p>
+                    <p>Etes-vous sûr de vouloir l'ouvrir quand même ?</p>
+                    <div class="restricted-actions">
+                        <button id="open-forbidden" class="danger-button">[ OUI ]</button>
+                        <button id="close-forbidden" class="system-button">[ NON ]</button>
+                    </div>
+                </div>
+            </section>
+
+        <!--  ZONE DE MESSAGES SYSTÈME  -->
+            
+            <div id="system-message-container" class="system-message-container" aria-live="polite">
+                <!-- Les messages seront générés par JavaScript -->
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>Aïda SOW - Mon Portfolio 2026.</p>
+
+        <!--  FOOTER  -->
+    <footer class="system-footer">
+        <p>&lt; UN PORTFOLIO FAIT DE CODE... ET QUELQUE CHOSE DE PLUS &gt;</p>
+        <p>SYSTÉME_404</p>
     </footer>
+    </div>
 </body>
 </html>
